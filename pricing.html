@@ -1,0 +1,229 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chromelite Technologies | Pricing Schedule</title>
+
+    <link rel="stylesheet" href="chromelite.css">
+
+    <!-- Internal CSS for Print -->
+    <style>
+        @media print {
+
+            body * {
+                visibility: hidden;
+            }
+
+            .table-container,
+            .table-container * {
+                visibility: visible;
+            }
+
+            .table-container {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                margin: 0;
+            }
+
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                border: 2px solid black;
+            }
+
+            th, td {
+                border: 1px solid black !important;
+                color: black !important;
+                background: white !important;
+                padding: 10px;
+            }
+
+            thead th {
+                background: #ddd !important;
+                color: black !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            tfoot td {
+                color: black !important;
+                background: #eee !important;
+            }
+
+            @page {
+                size: landscape;
+                margin: 10mm;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="chromelite-logo.png"
+                 alt="Chromelite Technologies Logo"
+                 style="width:180px;">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Pricing Heading -->
+    <section class="pricing-heading">
+        <h1>CHROMELITE TECHNOLOGIES LIMITED</h1>
+        <h2>SUPPLIER PRICING SCHEDULE</h2>
+        <p>Grand City Complex, Naalya, Kampala</p>
+    </section>
+
+    <!-- Pricing Table -->
+    <div class="table-container">
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Item No.</th>
+                    <th>Category</th>
+                    <th>Product Description</th>
+                    <th>Unit Price (UGX)</th>
+                    <th>Qty</th>
+                    <th>Total (UGX)</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <!-- Branded Stationery -->
+                <tr>
+                    <td>1</td>
+                    <td class="category" rowspan="3">
+                        Branded Stationery
+                    </td>
+                    <td>Branded Business Cards</td>
+                    <td>150</td>
+                    <td>500</td>
+                    <td>75,000</td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>Branded Letterheads</td>
+                    <td>250</td>
+                    <td>300</td>
+                    <td>75,000</td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>Branded Notebooks</td>
+                    <td>2,500</td>
+                    <td>100</td>
+                    <td>250,000</td>
+                </tr>
+
+                <!-- Event Materials -->
+                <tr>
+                    <td>4</td>
+                    <td class="category" rowspan="3">
+                        Event Materials
+                    </td>
+                    <td>Branded Banners</td>
+                    <td>85,000</td>
+                    <td>4</td>
+                    <td>340,000</td>
+                </tr>
+
+                <tr>
+                    <td>5</td>
+                    <td>Pull-up Banners</td>
+                    <td>180,000</td>
+                    <td>2</td>
+                    <td>360,000</td>
+                </tr>
+
+                <tr>
+                    <td>6</td>
+                    <td>Branded Lanyards</td>
+                    <td>1,800</td>
+                    <td>200</td>
+                    <td>360,000</td>
+                </tr>
+
+                <!-- Branded Apparel -->
+                <tr>
+                    <td>7</td>
+                    <td class="category" rowspan="3">
+                        Branded Apparel
+                    </td>
+                    <td>Branded Polo Shirts</td>
+                    <td>18,000</td>
+                    <td>50</td>
+                    <td>900,000</td>
+                </tr>
+
+                <tr>
+                    <td>8</td>
+                    <td>Branded Caps</td>
+                    <td>12,000</td>
+                    <td>50</td>
+                    <td>600,000</td>
+                </tr>
+
+                <tr>
+                    <td>9</td>
+                    <td>Branded Jackets</td>
+                    <td>85,000</td>
+                    <td>10</td>
+                    <td>850,000</td>
+                </tr>
+
+            </tbody>
+
+            <!-- Table Footer -->
+            <tfoot>
+
+                <tr>
+                    <td colspan="5">Subtotal</td>
+                    <td>3,810,000</td>
+                </tr>
+
+                <tr>
+                    <td colspan="5">VAT @ 18%</td>
+                    <td>685,800</td>
+                </tr>
+
+                <tr>
+                    <td colspan="5">Grand Total</td>
+                    <td>4,495,800</td>
+                </tr>
+
+            </tfoot>
+
+        </table>
+
+    </div>
+
+    <!-- Company Footer -->
+    <footer>
+        <h3>Chromelite Technologies Limited</h3>
+        <p>Grand City Complex, Naalya, Kampala</p>
+        <p>Phone: +256 700 000 000</p>
+        <p>Email: info@chromelite.co.ug</p>
+        <p>&copy; 2026 Chromelite Technologies Limited.
+           All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
